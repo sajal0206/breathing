@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Amazing Hover Effect</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css"
+        integrity="sha512-3M00D/rn8n+2ZVXBO9Hib0GKNpkm8MSUU/e2VNthDyBYxKWG+BftNYYcuEjXlyrSO637tidzMBXfE7sQm0INUg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<body id="body">
+    </head>
+
+    <div class="container">
+        <h1>Breathing Effect Of Social Media Icons</h1>
+        <br><br>
+        <ul>
+            <li>
+                <i id="fb" class="fab fa-facebook"></i>
+            </li>
+            <li>
+                <i id="wp" class="fab fa-whatsapp-square"></i>
+            </li>
+            <li>
+                <i id="tt" class="fab fa-twitter-square"></i>
+            </li>
+            <li>
+                <i id="ig" class="fab fa-instagram"></i>
+            </li>
+            <li>
+                <i id="yt" class="fab fa-youtube-square"></i>
+            </li>
+        </ul>
+    </div>
+</body>
+
+<script>
+    $(function () {
+        var fb = document.getElementById("fb");
+        var wp = document.getElementById("wp");
+        var tt = document.getElementById("tt");
+        var ig = document.getElementById("ig");
+        var yt = document.getElementById("yt");
+        var body = document.getElementById("body");
+
+        $(fb).hover(function () {
+            $(body).css("background", "#3b5998");
+
+        }, function () {
+            $(body).css("background", "#fff");
+        }
+        );
+        $(wp).hover(function () {
+            $(body).css("background", "#25d366");
+
+        }, function () {
+            $(body).css("background", "#fff");
+        }
+        );
+        $(tt).hover(function () {
+            $(body).css("background", "#1da1f2");
+
+        }, function () {
+            $(body).css("background", "#fff");
+        }
+        );
+        $(ig).hover(function () {
+            $(body).css("background", "#c32aa3");
+
+        }, function () {
+            $(body).css("background", "#fff");
+        }
+        );
+        $(yt).hover(function () {
+            $(body).css("background", "#ff0000");
+        }, function () {
+            $(body).css("background", "#fff");
+        }
+        );
+    });
+
+</script>
+
+</html>
